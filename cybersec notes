@@ -1,0 +1,21 @@
+Ports : r the adrreses where we send packerts // take it as example of reciervers adress
+
+eg : zoom is a software it developers fix its port in its code and by default our pc sets the fixed port suppose 8080 for recieving packets from zoom
+
+Well-Known Ports (0-1023):
+
+These ports are used by widely used protocols and services. For example:
+Port 80 for HTTP (web traffic)
+Port 443 for HTTPS (secure web traffic)
+Port 22 for SSH (secure shell)
+Registered Ports (1024-49151):
+
+These ports are assigned for specific applications by software vendors. They are less commonly used than well-known ports but are still standardized for various services. For example:
+Port 3306 for MySQL database
+Port 5432 for PostgreSQL database
+Port 8080 for HTTP alternate (commonly used for web services and development)
+Dynamic or Private Ports (49152-65535):
+
+These ports are used for temporary or private connections, often assigned dynamically by applications. They are generally used for ephemeral ports in client-side connections or internal services. For example:
+Port 50000 might be used for custom applications or services in a private network
+Ports in this range are often used for short-lived connections or client-side applications that need unique, temporary endpoints
