@@ -19,3 +19,68 @@ Dynamic or Private Ports (49152-65535):
 These ports are used for temporary or private connections, often assigned dynamically by applications. They are generally used for ephemeral ports in client-side connections or internal services. For example:
 Port 50000 might be used for custom applications or services in a private network
 Ports in this range are often used for short-lived connections or client-side applications that need unique, temporary endpoints
+
+
+// PROTOCOLS
+:  RULES AND REGULATION OF NETWORKING
+-> set of rules how data is transmitted
+-> 1. Application layer has some protocols like Telnet,Http,SNTP
+
+-> 2.Transport layer has protocols like TCP,UDP
+
+-> 3. Internet : IP,ICMP,ARP,DHCP
+
+-> 4. Netwok acess : Ethernet , PPP,ADSL
+
+---------------------------------------------------------------------------
+-> TCP(Transmission control Protocol) 
+1. TCP HAS 6 FLAGS WHICH HELP IN EFFECTIVE COMMUNICATION OF TCP
+
+-> URG(urgent) : if packet is really important user would atach urg flag to it as this reffrs this packet needs to be processed on urgent basis .. just help in priortizing task
+
+-> FIN(finish) : there will be no further transmission  .. connection needs to break when data transmission is complete
+
+-> RST(reset) : resets a connection . if networking as error we just reset connection
+
+-> PSH(push) : sends all buffered data immidiately .. if a user wants to break connection and it is duty of psh to make him altert and sends left data
+
+-> Acknowledgement : acknowledges the recipt of pakets.  double tick in whatsapp means message is recieved by user
+
+-> SYN(synchronize) : initiates a connection bw hosts. to establish connection bw two user first flag is SYN TO Initiate connection
+
+----------------------------------------------------------------------------
+CHEK OUT IMAGE : 3WAYHS
+// there is also a pt when we send syn flag to ser b port that should be open to establish a connection
+
+TCP 3 WAY HS : USER A AND USER B
+1. SYN FLAG BY USER A TO B < TO INITIATE CONNECTION>
+2. USER B SEND SYN + ACK THAT RECIEVED USER A FLAG AND AGAIN IT SEND SIN AS B ALSO WANTS TO ESTABLISH CONNECTION WITH A
+3. THEN USER A AGAIN SEND ACK TO B THAT YES UR SYN + ACK IS REACHED TO ME
+
+-> this 3 step process is known as 3 way handshake
+----------------------------------------------------------------------------
+
+TCP CONNECTION TERMINATION USER A AND B
+
+1. USER A SENDS FIN FLAG TO B TO BREAK CONNECTION
+2. USER B SEND ACK TO A
+3. AGASIN USER B TOOK SOMETIME TO CHECK ALL DATA IS TRASMITTED AND IF YES THEN USER B AGAIN SENDS FIN FLAG TO USER A	
+4. TEHN USER A AGAIN SENDS ACK TO B
+
+----------------------------------------------------------------------------
+
+UDP(user datagram protocol) : udp is fast but less secure
+1.Request by a
+2. response by b and data sharing starts
+
+// all thse protocols in smtp,dns take use of tcp and dns take use of both tcp and udp to establish connection
+
+image reffer : ports image
+
+----------------------------------------------------------------------------
+
+jio allotes us dynamic public ip to all our devices
+
+
+
+
